@@ -1,0 +1,10 @@
+# Publish only the static app and its documentation.
+/*
+!/.gitignore
+!/app/
+/app/*
+!/app/index.html
+!/app/style.css
+!/app/app.js
+!/app/words.js
+!/使用說明.md

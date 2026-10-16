@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>單字複習 + 口說活用</title>
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">單字複習 <span class="brand-plus">+</span> 口說活用</div>
+    <nav class="tabs" id="tabs" aria-label="主選單">
+      <button class="tab" data-view="dashboard"><span class="tab-ico" aria-hidden="true">🏠</span><span class="tab-label">總覽</span></button>
+      <button class="tab" data-view="triage"><span class="tab-ico" aria-hidden="true">⚡</span><span class="tab-label">快速篩查</span></button>
+      <button class="tab" data-view="review"><span class="tab-ico" aria-hidden="true">🔁</span><span class="tab-label">複習</span></button>
+      <button class="tab" data-view="speak"><span class="tab-ico" aria-hidden="true">🗣️</span><span class="tab-label">口說活用</span></button>
+      <button class="tab" data-view="browse"><span class="tab-ico" aria-hidden="true">📖</span><span class="tab-label">單字表</span></button>
+      <button class="tab" data-view="settings"><span class="tab-ico" aria-hidden="true">⚙️</span><span class="tab-label">設定</span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="view" id="view-dashboard" hidden></section>
+    <section class="view" id="view-triage" hidden></section>
+    <section class="view" id="view-review" hidden></section>
+    <section class="view" id="view-speak" hidden></section>
+    <section class="view" id="view-browse" hidden></section>
+    <section class="view" id="view-settings" hidden></section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="words.js?v=2"></script>
+  <script src="app.js?v=2"></script>
+</body>
+</html>
